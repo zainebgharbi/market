@@ -27,7 +27,7 @@ public class Category {
 	@Column  
 	private String name; 
 	@Column  
-	private double description;
+	private String description;
 	public int getId() {
 		return id;
 	}
@@ -40,10 +40,11 @@ public class Category {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public double getDescription() {
+
+	public String getDescription() {
 		return description;
 	}
-	public void setDescription(double description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 	@Override
